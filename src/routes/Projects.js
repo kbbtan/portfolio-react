@@ -16,8 +16,8 @@ function Projects() {
         <Container className="mt-5">
             <Row xs={1} md={2} className="g-4">
                 <Col>
-                    <Card>
-                        <Card.Img variant="top" src={SGExamsImage} className="card-height"/>
+                    <Card className="project-card">
+                        <a href="https://exams.sg"><Card.Img variant="top" src={SGExamsImage} className="card-height"/></a>
                         <Card.Body>
                             <Card.Title>SGExams Website</Card.Title>
                             <Card.Text>
@@ -28,8 +28,8 @@ function Projects() {
                 </Col>
 
                 <Col>
-                    <Card>
-                        <Card.Img variant="top" src={BUSalmonBotImage} className="card-height"/>
+                    <Card className="project-card">
+                        <a href="https://t.me/BUSalmonBot"><Card.Img variant="top" src={BUSalmonBotImage} className="card-height"/></a>
                         <Card.Body>
                             <Card.Title>BUSalmonBot</Card.Title>
                             <Card.Text>

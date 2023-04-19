@@ -6,6 +6,8 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
+import "./Contact.css";
+
 // React Icons Imports.
 import { MdEmail } from "react-icons/md";
 import { BsGithub } from "react-icons/bs";
@@ -25,7 +27,7 @@ function Contact() {
 
                       <Form.Group className="mb-3">
                         <Form.Label>Message:</Form.Label>
-                        <Form.Control as="textarea" rows={13} />
+                        <Form.Control as="textarea" rows={13} placeholder="Insert really insightful note here"/>
                       </Form.Group>
 
                       <Button variant="primary" type="submit">
@@ -40,7 +42,7 @@ function Contact() {
                       <Card.Body><MdEmail/> kbbtan@bu.edu</Card.Body>
                     </Card>
                     <Card bg="dark" text="light" className="mt-5">
-                      <Card.Body><BsGithub/> kbbtan</Card.Body>
+                      <Card.Body><BsGithub/><Card.Link className="github-link" href="https://github.com/kbbtan">kbbtan</Card.Link></Card.Body>
                     </Card>
                   </Container>
                 </Col>

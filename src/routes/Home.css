@@ -1,0 +1,15 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    animation-name: fadeFromTop;
+    animation-duration: 2s;
+}
+
+@keyframes fadeFromTop
+{
+  from {transform: translateY(-200px); opacity: 0;}
+  to { transform: translateY(0); opacity: 1;}
+}
